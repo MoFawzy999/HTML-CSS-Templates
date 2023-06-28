@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box ;
+    margin : 0 ; 
+    padding: 0 ;
+  }
+  body{
+    background-color: #eee ;
+    font-family: 'Lato', sans-serif;
+  }
+  #header{
+     width: 100% ; 
+     min-height : 100px ;
+     padding : 10px ;
+     position : fix ;
+     top : 0 ;
+     display : flex ;
+     justify-content : space-between ;
+     align-items : center ;
+  }
+  #header-img{
+    width : 190px ;
+  }
+  #nav-bar  a {
+    text-decoration : none ;
+    color : black ;
+    margin : 15px;
+  }
+  #form{
+     display : flex;
+     flex-direction : column ;
+     justify-content : space-between ; 
+     align-items : center ;
+     row-gap: 15px ;
+  }
+  #email{
+    width : 220px ; 
+    height: 30px ;
+  }
+  #submit{
+    width : 160px ;
+    height : 40px ;
+    background-color : yellow ;
+    border : 0 ;
+    font-weight : 800 ;
+    font-size : 18px ;
+    text-transform : uppercase ;
+  }
+  i{
+    color: gold ;
+    margin-left : 20px;
+  }
+  .features{
+    margin-top : 70px;
+    display : grid ;
+    row-gap : 30px ;
+    margin-bottom: 30px ;
+  }
+  .features > div{
+    display : grid ;
+    grid-template-columns:100px 1fr;
+  }
+  #how_work{
+    text-align : center ;
+    margin-bottom : 35px ;
+  }
+  
+  #pricing{
+    display : flex ; 
+    justify-content : center ; 
+  }
+  #pricing > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  #pricing div h4{
+     margin-top : 5px ;
+     margin-bottom : 15px
+  } 
+  #pricing .title{
+    background-color : lightgrey ;
+   padding : 10px  ;
+   font-weight : 700 ;
+  }
+  #pricing ul li {
+    list-style : none ;
+    margin-bottom : 3px ;
+  }
+  button{
+    background-color : yellow ;
+    border : 0 ;
+    padding : 10px ;
+    margin-top : 15px ;
+    margin-bottom : 15px ;
+  }
+  .footer{
+     background-color : lightgrey ;
+     width : 95%; 
+     height : 70px ;
+     margin : 10px auto 0 ;
+     display : flex ;
+     flex-direction : column ;
+     padding-right : 15px ;
+  }
+  .footer ul {
+    width : 200px ;
+    list-style : none ;
+    display : flex;
+    justify-content : space-between ;
+    align-self : flex-end ;
+    margin-top : 15px ;
+  }
+  .footer p {
+    font-size : 14px ;
+    align-self : flex-end ;
+     margin-top : 10px ;
+  }
+  
+  @media(max-width:1600px){
+    .features{
+    width : 80% ;
+    margin : 70px auto 30px ;  
+    display : grid ;
+    row-gap : 30px ;
+  }
+    #pricing{
+    width : 80% ;  
+    margin: 0 auto ;  
+    display : flex ; 
+    justify-content : space-around ; 
+  }
+    #pricing > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width : calc(100%/3) ;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  #pricing .title{
+    background-color : lightgrey ;
+   padding : 10px 70px   ;
+   font-weight : 700 ;
+  }
+  }
+  
