@@ -1,0 +1,310 @@
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #installers-section .content {
+    width: 40%;
+  }
+  #installers-section .content h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #installers-section .image {
+    width: 40%;
+  }
+  #installers-section .content ul li {
+    font-size: 18px;
+  }
+  #installers-section .image .solar-charger {
+    bottom: 35%;
+    width: 180px;
+  }
+  #installers-section .image .solar-charger p {
+    font-size: 16px;
+  }
+  footer .head .part-two{
+    width: 35%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 70px;
+  }
+  header nav {
+    display: none;
+  }
+  header nav {
+    background-color: var(--main-color);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 70px;
+    top: 100%;
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    transition: 0.4s ease;
+  }
+  header nav.responsive-shape {
+    height: 250px;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 7px 15px;
+  }
+  header nav .call-us span:first-child {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  header nav .call-us {
+    margin-bottom: 10px;
+  }
+  header img {
+    width: 100px;
+    height: 40px;
+  }
+  #home-section .content h1 {
+    font-size: 32px;
+  }
+  #home-section .progress-container {
+    width: 400px;
+    top: 100px;
+  }
+  #installers-section .content {
+    width: 100%;
+    text-align: center;
+  }
+  #installers-section .content ul {
+    text-align: center;
+  }
+  #installers-section .image {
+    margin-inline: auto;
+  }
+  #repair-section .container .content {
+    min-height: 400px;
+  }
+  #repair-section .container .content article {
+    width: 70%;
+    padding: 30px;
+  }
+  #repair-section .container .content article h3 {
+    font-size: 32px;
+  }
+  #repair-section .container .content article p {
+    font-size: 16px;
+  }
+  #inovators-section .description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #inovators-section .description .icon {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  #inovators-section .innovators {
+    width: 100%;
+  }
+  #feedback-section .quote {
+    width: 100%;
+    text-align: center;
+  }
+  #feedback-section .feedback {
+    margin: 50px auto;
+  }
+  #feedback-section .feedback .foot .indicators div {
+    font-size: 22px;
+    padding: 8px 14px;
+  }
+  footer .head .part-one ,
+  footer .foot div , 
+  footer .foot p{
+    width: 100%;
+    text-align: center;
+  }
+  footer .head .part-two{
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+  }
+  footer .head .part-one{
+    margin-bottom: 30px;
+  }
+  footer .foot div{
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .container {
+    padding: 0 40px;
+  }
+  header img {
+    width: 70px;
+  }
+  header nav {
+    right: 0;
+  }
+  header .menu-bar {
+    padding: 7px 10px;
+  }
+  #home-section .content {
+    align-items: center;
+    text-align: center;
+  }
+  #home-section .content h1 {
+    font-size: 28px;
+    width: 60%;
+  }
+  #home-section .content p {
+    font-size: 20px;
+    line-height: 20px;
+    width: 60%;
+  }
+  #home-section .content .butons {
+    margin-bottom: 10px;
+  }
+  #home-section .content .butons button:first-child {
+    margin-bottom: 5px;
+    margin-left: 7px;
+  }
+  #home-section .progress-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #home-section .progress-container .progress-bar {
+    width: 70%;
+  }
+  #installers-section .content h2 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  #installers-section .content p {
+    line-height: 20px;
+  }
+  #installers-section .content ul li {
+    font-size: 16px;
+  }
+  #installers-section .image .solar-charger {
+    width: 180px;
+    left: -25px;
+  }
+  #call-section .container {
+    min-height: 300px;
+  }
+  #call-section .content h2 {
+    font-size: 24px;
+  }
+  #call-section .content p {
+    font-size: 16px;
+  }
+  #call-section .content button {
+    padding: 10px 25px;
+  }
+  #solar-kits-section .kits .kit {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #solar-kits-section .kits .kit a {
+    width: fit-content;
+    margin: 15px auto;
+  }
+  #repair-section .container .content article {
+    width: 80%;
+  }
+  #repair-section .container .content article h3 {
+    font-size: 20px;
+  }
+  #repair-section .container .content article p {
+    font-size: 12px;
+  }
+  #inovators-section .innovators .innovator {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  #inovators-section .innovators .innovator a {
+    width: fit-content;
+    margin-inline: auto;
+  }
+  #values .boxes .box {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  #values .boxes .box h4 {
+    font-size: 18px;
+  }
+  #values .boxes .box p {
+    font-size: 14px;
+  }
+  #feedback-section .feedback {
+    width: 100%;
+  }
+  #feedback-section .feedback .foot,
+  #feedback-section .feedback .foot .profile,
+  #feedback-section .feedback .head {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  #feedback-section .feedback .foot .indicators,
+  #feedback-section .feedback .profile {
+    margin-inline: auto;
+  }
+  #feedback-section .feedback p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  footer .head .part-one{
+    margin-bottom: 50px;
+  }
+  footer .head .part-one .links{
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  #home-section .content h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  #home-section .content p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #home-section .progress-container {
+    width: 100%;
+  }
+  #home-section .progress-container .progress-bar {
+    width: 70%;
+  }
+  #installers-section .image .solar-charger {
+    display: none;
+  }
+  #call-section .container {
+    min-height: 250px;
+    padding-block: 15px;
+  }
+  #call-section .content h2 {
+    font-size: 22px;
+  }
+  #call-section .content p {
+    font-size: 14px;
+  }
+  footer .head .part-two .inputs input{
+    font-size: 8px;
+  }
+  footer .head .part-two .inputs button{
+    padding: 12px 15px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  header .menu-bar {
+    display: none;
+  }
+}

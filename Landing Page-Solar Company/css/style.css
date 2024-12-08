@@ -1,0 +1,632 @@
+/*main styles*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --main-color: #0b9586;
+  --second-color: rgba(60, 171, 144, 0.05);
+  --yellow-color: #ffbb1c;
+  --text-color: #475467;
+  --title-black-color: #101828;
+  --title-white-color: #ffffff;
+  --footer-color: #283646;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+}
+#solar-kits-section .heading,
+#values .heading {
+  margin: 0 auto;
+  text-align: center;
+}
+#solar-kits-section .heading h3,
+#values .heading h3 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+#solar-kits-section .heading p #values .heading p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+/*header*/
+header {
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 15px 0;
+  color: var(--title-white-color);
+  position: relative;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+}
+header nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header nav ul li {
+  font-weight: 200;
+  padding: 10px 20px;
+}
+header nav ul li.active,
+header nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+header nav ul li a {
+  color: var(--title-white-color);
+}
+header nav .call-us span {
+  display: block;
+}
+header nav .call-us span:first-child {
+  font-weight: 200;
+  text-align: right;
+}
+header .menu-bar {
+  padding: 10px 15px;
+  border: 1px solid var(--title-white-color);
+  border-radius: 4px;
+}
+/*landing section*/
+#home-section {
+  background: url("../images/solar-panels-meadow1.png") center/cover no-repeat;
+  width: 100vw;
+  color: var(--title-white-color);
+}
+#home-section .progress-container {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 60px;
+}
+#home-section .progress-container .progress-bar {
+  width: 300px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: rgba(87, 87, 87, 1);
+  overflow: hidden;
+  position: relative;
+}
+#home-section .progress-container .progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--title-white-color);
+  height: 100%;
+  width: 35%;
+}
+#home-section .content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#home-section .content h1 {
+  font-weight: 600;
+  font-size: 50px;
+  width: 50%;
+}
+#home-section .content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  width: 50%;
+}
+#home-section .content .butons button {
+  border: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+#home-section .content .butons button:first-child {
+  background-color: var(--main-color);
+  color: var(--title-white-color);
+  margin-right: 10px;
+}
+#home-section .content .butons button:first-child:hover {
+  background-color: #31968a;
+}
+#home-section .content .butons button:last-child {
+  background-color: var(--yellow-color);
+  color: var(--title-black-color);
+}
+#home-section .content .butons button:last-child:hover {
+  background-color: #f5c34e;
+}
+/*installers-section*/
+#installers-section {
+  padding-top: 50px;
+}
+#installers-section .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#installers-section .content {
+  width: 50%;
+}
+#installers-section .content h2 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  color: var(--title-black-color);
+  margin-bottom: 15px;
+}
+#installers-section .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+#installers-section .content ul li {
+  color: var(--title-black-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+#installers-section .content ul li span {
+  color: rgba(132, 189, 58, 1);
+  margin-right: 10px;
+}
+#installers-section .image {
+  position: relative;
+}
+#installers-section .image img {
+  max-width: 100%;
+}
+#installers-section .image .solar-charger {
+  width: 260px;
+  height: 200px;
+  background-color: var(--yellow-color);
+  border-radius: 12px;
+  text-align: left;
+  position: absolute;
+  left: -50px;
+  bottom: 24px;
+  padding: 25px;
+}
+#installers-section .image .solar-charger img {
+  display: block;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+#installers-section .image .solar-charger p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(42, 51, 52, 1);
+}
+/*call-section*/
+#call-section {
+  margin-top: 50px;
+  background: url("../images/8116\ 1.png") center/cover no-repeat;
+}
+#call-section .container {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+#call-section .content {
+  width: 60%;
+}
+#call-section .content h2 {
+  font-weight: 600;
+  font-size: 42px;
+  color: var(--title-white-color);
+  margin-bottom: 30px;
+}
+#call-section .content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--title-white-color);
+  margin-bottom: 30px;
+}
+#call-section .content button {
+  border: none;
+  border-radius: 100px;
+  background-color: var(--yellow-color);
+  color: var(--title-black-color);
+  padding: 15px 35px;
+  cursor: pointer;
+}
+/*solar-kits-section*/
+#solar-kits-section {
+  padding-top: 50px;
+}
+#solar-kits-section .kits {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#solar-kits-section .kits .kit {
+  flex-basis: calc(100% / 3 - 30px);
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.05);
+}
+#solar-kits-section .kits .kit h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+#solar-kits-section .kits .kit img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#solar-kits-section .kits .kit p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+#solar-kits-section .kits .kit a {
+  font-weight: 600;
+  color: var(--main-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  gap: 10px;
+}
+/*repair-section*/
+#repair-section {
+  margin-top: 50px;
+  background: url("../images/8116 1 (1).png") center/cover no-repeat;
+}
+#repair-section .container .content {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#repair-section .container .content article {
+  background-color: rgba(0, 0, 0, 0.57);
+  border-radius: 12px;
+  color: var(--title-white-color);
+  width: 70%;
+  padding: 50px;
+  text-align: center;
+  backdrop-filter: blur(24px);
+}
+#repair-section .container .content article h3 {
+  font-weight: 600;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+#repair-section .container .content article p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+/*inovators-section*/
+#inovators-section {
+  padding-top: 50px;
+}
+#inovators-section .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#inovators-section .description {
+  width: 35%;
+}
+#inovators-section .description .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 8px solid rgba(60, 171, 144, 0.3);
+  margin-bottom: 30px;
+}
+#inovators-section .description h2 {
+  font-weight: 600;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+#inovators-section .description p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+#inovators-section .innovators {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#inovators-section .innovators .innovator {
+  background-color: var(--second-color);
+  border-radius: 8px;
+  padding: 20px;
+  flex-basis: calc(100% / 2 - 50px);
+  border: 1px solid rgba(60, 171, 144, 1);
+}
+#inovators-section .innovators .innovator img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#inovators-section .innovators .innovator h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#inovators-section .innovators .innovator p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+#inovators-section .innovators .innovator a {
+  font-weight: 600;
+  color: var(--main-color);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*values*/
+#values {
+  padding-top: 70px;
+}
+#values .heading {
+  margin-bottom: 20px;
+}
+#values .boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#values .boxes .box {
+  background-color: var(--second-color);
+  border-radius: 8px;
+  padding: 20px;
+  flex-basis: calc(100% / 3 - 15px);
+  border: 1px solid rgba(60, 171, 144, 1);
+}
+#values .boxes .box img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+#values .boxes .box h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+#values .boxes .box p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 24px;
+}
+/*feedback-section*/
+#feedback-section {
+  padding-top: 100px;
+}
+#feedback-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#feedback-section .quote {
+  width: 35%;
+}
+#feedback-section .quote span {
+  color: var(--main-color);
+  font-size: 64px;
+}
+#feedback-section .quote h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+#feedback-section .quote p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+#feedback-section .feedback {
+  width: 65%;
+  background-color: var(--second-color);
+  padding: 40px;
+  border-radius: 24px;
+}
+#feedback-section .feedback .head {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+#feedback-section .feedback .head,
+#feedback-section .feedback .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#feedback-section .feedback .head .points {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+#feedback-section .feedback .head .points span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(217, 217, 217, 1);
+}
+#feedback-section .feedback .head .points span:first-child {
+  background-color: rgba(107, 107, 107, 1);
+}
+#feedback-section .feedback p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 50px;
+}
+#feedback-section .feedback .foot {
+  align-items: flex-end !important ;
+}
+#feedback-section .feedback .foot .profile,
+#feedback-section .feedback .foot .indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#feedback-section .feedback .foot .profile div span {
+  display: block;
+}
+#feedback-section .feedback .foot .profile div span:first-child {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+#feedback-section .feedback .foot .indicators div {
+  font-size: 28px;
+  padding: 10px 18px;
+  border: 1px solid var(--title-black-color);
+  border-radius: 50%;
+}
+/*footer*/
+footer {
+  margin-top: 50px;
+  padding-block: 50px;
+  min-height: 350px;
+  width: 100%;
+  background-color: var(--footer-color);
+}
+footer .head {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(113, 119, 125, 1);
+}
+footer .head,
+footer .foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .head .part-one img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+footer .head .part-one .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+footer .head .part-one .links li a,
+footer .head .part-two span {
+  color: var(--title-white-color);
+  font-weight: 300;
+}
+footer .head .part-two{
+    width: 30%;
+}
+footer .head .part-two .inputs {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+footer .head .part-two .inputs input{
+  color : #B3BDC7 ;
+  border: 1px solid #B3BDC7 ;
+  border-radius: 38px;
+  width: 100%;
+  padding-block: 15px;
+  padding-left: 20px;
+  background-color: #FFFFFF17;
+  outline: none;
+  text-align: left;
+}
+footer .head .part-two .inputs button{
+  border-radius: 109px;
+  border: none;
+  padding: 16px 35px;
+  background-color: var(--yellow-color);
+  color: var(--title-white-color);
+  position: absolute;
+  right: 0;
+}
+footer .foot {
+  padding-top: 50px;
+}
+footer .foot div,
+footer .foot p {
+  font-size: 12px;
+  color: #92989f;
+  font-weight: 400;
+}
+footer .foot div span {
+  padding-right: 15px;
+  border-right: 1px solid #92989f;
+}
+footer .foot div span:not(:first-child) {
+  padding-left: 15px;
+}
